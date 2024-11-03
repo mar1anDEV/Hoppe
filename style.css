@@ -40,6 +40,10 @@
     background-color: var(--bg-color);
     height: auto;
     padding: 0 13%;
+    top: 0;
+    left: 0 ;
+    right: 0;
+    position: sticky;
 }
 .header-top {
     background-color: transparent;
