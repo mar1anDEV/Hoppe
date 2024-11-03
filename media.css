@@ -135,3 +135,9 @@
     }
 
 }
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .hoppe-section-background-pading{
+        padding: 0 !important;
+    }
+    
+}
