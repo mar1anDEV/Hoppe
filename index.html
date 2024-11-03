@@ -1,0 +1,695 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main-page-wrapper">
+        <header class="main-page-header-wrapper">
+            <div class="header-top">
+                <div class="container">
+                    <div class="main-top-header-container">
+                        
+                        <div class="navbar-brand">
+                            <div class="navbar-logo">
+                                <img src="assets/logo_300x42.webp">
+                            </div>
+                        </div>
+    
+                        <div class="search-container">
+                            <form action="get.php" class="search-from" method="get">
+                                <div class="field-search">
+                                    <input type="text" class="search-input" placeholder="Hier den ganzen Shop durchsuchen...">
+                                </div>
+                            </form>
+                            <div class="action">
+                                <button type="submit" class="search-btn">
+                                    <i class="fas fa-search search-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    
+    
+                        <div class="toolbar-container">
+                            <ul class="toolbar-icons">
+                                <div class="first-icon-container icon-container">
+                                    <div class="heart-icon main-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="text-container-icon">
+                                        <div class="main-title-icon">
+                                            <h3>Mein Wunschzettel</h3>
+                                        </div>
+                                        <div class="sub-title-icon">
+                                            <p>0 Artikel</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="second-icon-container icon-container">
+                                    <div class="heart-icon main-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="text-container-icon">
+                                        <div class="main-title-icon">
+                                            <h3>Mein Warenkorb</h3>
+                                        </div>
+                                        <div class="sub-title-icon">
+                                            <p>0 Artikel</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="third-icon-container icon-container">
+                                    <div class="heart-icon main-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="text-container-icon">
+                                        <div class="main-title-icon">
+                                            <h3>Anmelden</h3>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="search-container search-collapse">
+                    <form action="get.php" class="search-from" method="get">
+                        <div class="field-search">
+                            <input type="text" class="search-input" placeholder="Hier den ganzen Shop durchsuchen...">
+                        </div>
+                    </form>
+                    <div class="action">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search search-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container-bottom">
+                    <ul class="nav-bottom">
+                        <li class="nav-link"><a href="">Sortiment</a></li>
+                        <li class="nav-link"><a href="">Konfigurator</a></li>
+                        <li class="nav-link"><a href="">Über uns</a></li>
+                        <li class="nav-link"><a href="">Downloads</a></li>
+                        <li class="nav-link"><a href="">Kontakt</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="hamburger-menu-ui">
+                    <button class="btn-hamburger" id="toggleNav">
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                    </button>
+                </div>
+    
+    
+                <div class="kontakt-container">
+                    <div class="kontakt-rows">
+                        <div class="hotline-style">
+                            <p>
+                                <span class="hotline-text">
+                                    Hotline:
+                                </span>
+                            </p>
+                        </div>
+                        <div class="phone-number">
+                            <a href="tel:+495451-50230320">+49 (0) 5451 - 50230320</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navbar-collapse-ui">
+                    <div class="navbar-collapse-ui-column">
+                        <div class="header-navbar-collapse-rows">
+                            <div class="menu-nav-head">
+                                <h3>
+                                    <span>
+                                        MENÜ
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="close-menu">
+                                <div class="close-icon" id="closeMenu">
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <div class="navbar-collapse-links-container">
+                            <ul class="nav-bottom-collapse">
+                                <li class="nav-link collapse-link"><a href="">Sortiment</a></li>
+                                <li class="nav-link collapse-link"><a href="">Konfigurator</a></li>
+                                <li class="nav-link collapse-link"><a href="">Über uns</a></li>
+                                <li class="nav-link collapse-link"><a href="">Downloads</a></li>
+                                <li class="nav-link collapse-link"><a href="">Kontakt</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-hoppe-section">
+            <div class="hoppe-section-background-pading">
+                <div class="hoppe-banner-desktop">
+                    <img src="assets/2__Online_Rabatt.jpg" alt="" style="object-fit: cover; max-width: 100%; height: auto;">
+                </div>
+                <div class="hoppe-banner-mobile">
+                    <img src="assets/Teaser_2__Online_Rabatt_mobil.jpg" alt="" srcset="">
+                </div>
+
+                <div class="hoppe-cards-container">
+                    <div class="hoppe-cards-container-rows">
+                        <div class="hoppe-card">
+                            <div class="card-background">
+                                <div class="card-image">
+                                    <img src="assets-cards/Hoppe_Dieseltanks_Kategorievorschau_Kachel-edit.jpg">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="hoppe-card">
+                            <div class="card-background">
+                                <div class="card-image">
+                                    <img src="assets-cards/Hoppe_Hydralik_Kategorievorschau_Kachel.jpg" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="hoppe-card">
+                            <div class="card-background">
+                                <div class="card-image">
+                                    <img src="assets-cards/Hoppe_Kipperteile_Kategorievorschau_Kachel.jpg" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="hoppe-card">
+                            <div class="card-background">
+                                <div class="card-image">
+                                    <img src="assets-cards/Hoppe_Stauk_sten_Kategorievorschau_Kachel.jpg" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="hoppe-card">
+                            <div class="card-background">
+                                <div class="card-image">
+                                    <img src="assets-cards/Hoppe_Fahrzeugausr_stung_Kategorievorschau_Kachel.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="second-section-hoppe">
+
+                    <div class="second-section-title">
+                        <div class="main-title">
+                            <span>
+                                <h3>
+                                    Unsere Produktauswahl für Sie
+                                </h3>
+                            </span>
+                        </div>
+                    </div>
+    
+
+
+
+                    <div class="second-section-padding">
+                        <div class="second-section-rows">
+                            <div class="produkt-card">
+                                <div class="card-top">
+                                    <div class="card-top-image">
+                                        <img src="assets-buy-cards/hth_200632780000_8ofxknufd8dg2hgv.webp" alt="">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-name">
+                                            <span>
+                                                <h3>Ausziehleiter 2-stufig</h3>
+                                            </span>
+                                        </div>
+                                        <div class="card-price" style="display: flex; gap: 10px; padding: 5px;">
+                                            <div class="main-price">
+                                                <span>
+                                                    <h3>
+                                                        55,12 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                            <div class="removed-price">
+                                                <span>
+                                                    <h3>
+                                                     56,24
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-icons">
+                                        <div class="heart-card-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="shoping-card-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="produkt-card">
+                                <div class="card-top">
+                                    <div class="card-top-image">
+                                        <img src="assets-buy-cards/hth_200712320000_0yvvv1jqsi1riuns.webp" alt="">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-name">
+                                            <span>
+                                                <h3>Netzkasten verstellbar-650 <br>
+                                                1000x600x150</h3>
+                                            </span>
+                                        </div>
+                                        <div class="card-price" style="display: flex; gap: 10px; padding: 5px;">
+                                            <div class="main-price">
+                                                <span>
+                                                    <h3>
+                                                        412,30 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                            <div class="removed-price">
+                                                <span>
+                                                    <h3>
+                                                        420,71 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-icons">
+                                        <div class="heart-card-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="shoping-card-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="produkt-card">
+                                <div class="card-top">
+                                    <div class="card-top-image">
+                                        <img src="assets-buy-cards/hth_204488922000_01_iqqxsfrj6ukehy8h.webp" alt="">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-name">
+                                            <span>
+                                                <h3>Verstellpumpe Leduc TXV 92 R</h3>
+                                            </span>
+                                        </div>
+                                        <div class="card-price" style="display: flex; gap: 10px; padding: 5px;">
+                                            <div class="main-price">
+                                                <span>
+                                                    <h3>
+                                                        2.165,16 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                            <div class="removed-price">
+                                                <span>
+                                                    <h3>
+                                                        2.209,35 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-icons">
+                                        <div class="heart-card-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="shoping-card-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="produkt-card">
+                                <div class="card-top">
+                                    <div class="card-top-image">
+                                        <img src="assets-buy-cards/hth_210920860000_a_o72drhqts3qiye4u.webp" alt="">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-name">
+                                            <span>
+                                                <h3>Dieseltank 300 l Alu</h3>
+                                            </span>
+                                        </div>
+                                        <div class="card-price" style="display: flex; gap: 10px; padding: 5px;">
+                                            <div class="main-price">
+                                                <span>
+                                                    <h3>
+                                                        652,42 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                            <div class="removed-price">
+                                                <span>
+                                                    <h3>
+                                                        665,73 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-icons">
+                                        <div class="heart-card-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="shoping-card-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="produkt-card">
+                                <div class="card-top">
+                                    <div class="card-top-image">
+                                        <img src="assets-buy-cards/hth_269890010000_jvlmxnlbgapottw9.webp" alt="">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-name">
+                                            <span>
+                                                <h3>Staukasten KS 500X350x420 SR-Reihe</h3>
+                                            </span>
+                                        </div>
+                                        <div class="card-price" style="display: flex; gap: 10px; padding: 5px;">
+                                            <div class="main-price">
+                                                <span>
+                                                    <h3>
+                                                        58,48 €
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                            <div class="removed-price">
+                                                <span>
+                                                    <h3>
+                                                     59,67
+                                                    </h3>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-icons">
+                                        <div class="heart-card-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="shoping-card-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="description-section">
+                    <div class="description-section-container">
+                        <div class="description-section-title">
+                            <h4>
+                                <span>
+                                    <strong>
+                                        Ihr Spezialist für LKW-Hydraulik, Staukästen und Dieseltanks
+                                    </strong>
+                                </span>
+                            </h4>
+                        </div>
+
+                            <div class="description-second-title-text">
+                                <span>
+                                    <p>
+                                        Mit einem riesigen Sortiment an Hydraulikanlagen und Hydraulikkomponenten sind wir ein starker Partner in der LKW-Hydraulik. Wir bieten Ihnen die größte Auswahl an Hydraulikanlagen für Kipper-, Schubboden-, Silo-, Tank- oder Kranaufliegerbetrieb, Hydraulikpumpen und Zubehör. Egal welche Art oder Variante. Zudem sind wir Ansprechpartner und Spezialist in Sachen Staukästen aus Stahl, Edelstahl und Kunststoff, sowie Dieseltanks für LKW und Zubehör. Darüber hinaus führen wir ein umfassendes Sortiment an Kipperteilen, Bordwänden und Pritschen für Transporter.
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="description-second-title-text bottom-space-x1">
+                                <span>
+                                    <p>
+                                        Unser gesamtes Standardsortiment ist in der Regel sofort verfügbar und kann, wenn es eilig ist, per Expressversand zum nächsten Tag geliefert werden.
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="description-second-title-text bottom-space-x2">
+                                <span>
+                                    <p>
+                                        <strong>
+                                            „Heute bestellt - Morgen da“.
+                                        </strong>
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="email-abo-wrapper">
+                                <div class="email-wrapper-padding">
+                                    <div class="email-wrapper-container">
+                                        <div class="email-wrapper-icon">
+                                            <img src="assets-cards/sent_email.png" class="email-icon">
+                                        </div>
+
+                                        <div class="email-text">
+                                            <span>
+                                                <p>Jetzt <span class="hier">hier</span> klicken und zum Newsletter anmelden - verpassen Sie keine Produktneuheiten, Angebote und Rabatte mehr.</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+        <footer class="bottom-footer">
+            <div class="footer-rows">
+                <div class="footer-kontakt-schedule-icons footer-row">
+                    <div class="footer-kontakt footer-columns">
+                        <div class="footer-contact-container">
+                            <div class="footer-title">
+                                <h3>
+                                    <span>
+                                        <strong>
+                                            KONTAKT
+                                        </strong>
+                                    </span>
+                                </h3>
+                            </div>
+
+                            <div class="footer-text-detail">
+                                <span>
+                                    <p>Tel.: +49 (0) 5451 - 50230320</p>
+                                </span>
+                            </div>
+                            <div class="footer-text-detail">
+                                <span>
+                                    <p>Fax: +49 (0) 5451 - 50230348</p>
+                                </span>
+                            </div>
+                            <div class="footer-text-detail">
+                                <span>
+                                    <p>E-Mail: info@hoppe.parts</p>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="footer-text-detail">
+                            <span>
+                                <p>Öffnungszeiten:</p>
+                            </span>
+                        </div>
+                        <div class="footer-text-detail">
+                            <span>
+                                <p>Mo - Fr: 8:00 - 17:00 Uhr</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer-social-icons-container">
+
+                    </div>
+                </div>
+                <div class="footer-sortiment footer-row">
+                    <div class="footer-title">
+                        <h3>
+                            <span>
+                                <strong>
+                                    SORTIMENT
+                                </strong>
+                            </span>
+                        </h3>
+                    </div>
+
+                    <ul class="footer-links">
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/hydraulik.html">Hydraulik</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/staukasten.html">Staukästen</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/dieseltanks.html">Dieseltanks</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/kipperteile-und-fahrzeugbau.html">Fahrzeugbau und Kipperteile</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/fahrzeugausrustung-und-werkstattbedarf.html">Fahrzeugausrüstung & Werkstattbedarf
+                        </a></li>
+                    </ul>
+
+
+
+                </div>
+                <div class="footer-service footer-row">
+                    <div class="footer-title">
+                        <h3>
+                            <span>
+                                <strong>
+                                    SERVICE
+                                </strong>
+                            </span>
+                        </h3>
+                    </div>
+
+                    <ul class="footer-links">
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/hydraulik.html">Kontakt</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/staukasten.html">Downloads & Kataloge</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/dieseltanks.html">AGB</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/kipperteile-und-fahrzeugbau.html">Datenschutzbestimmungen</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/fahrzeugausrustung-und-werkstattbedarf.html">Impressum
+                        </a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-über-hoppe footer-row">
+                    <div class="footer-title">
+                        <h3>
+                            <span>
+                                <strong>
+                                    ÜBER HOPPE
+                                </strong>
+                            </span>
+                        </h3>
+                    </div>
+
+
+                    <ul class="footer-links">
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/hydraulik.html">Über uns</a></li>
+                        <li class="link-footer footer-text-detail"><a href="https://hoppe.parts/sortiment/staukasten.html">Karriere</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-versand-kosten footer-row">
+                    <div class="footer-title">
+                        <h3>
+                            <span>
+                                <strong>
+                                    VERSANDKOSTEN
+                                </strong>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="footer-text-detail">
+                        <span>
+                            <p>Paketdienst (bis 25 kg): 11,20 €</p>
+                        </span>
+                    </div>
+                    <div class="footer-text-detail">
+                        <span>
+                            <p>Nachtversand (bis 30 kg): 25,70 €</p>
+                        </span>
+                    </div>
+                    <div class="footer-text-detail">
+                        <span>
+                            <p>Nachtversand (31-60 kg): 73,00 €</p>
+                        </span>
+                    </div>
+                    <div class="footer-text-detail">
+                        <span>
+                            <p>Spedition: 68,00 €</p>
+                        </span>
+                    </div>
+
+
+                    <div class="footer-text-detail">
+                        <span>
+                            <p>Alle Preise sind in EUR zzgl. der gesetzlichen MwSt. <br>
+                            
+                                Irrtümer vorbehalten. Warenabgabe nur solange <br>
+                            
+                                Vorrat reicht. Verkauf nur an Gewerbetreibende.
+
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

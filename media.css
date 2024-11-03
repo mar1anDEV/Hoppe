@@ -1,0 +1,137 @@
+@media (max-width: 350px) {
+    .main-top-header-container{
+        flex-direction: column;
+        gap: 9px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-top-header-container{
+        flex-direction: column;
+        gap: 9px;
+    }
+    .footer-rows{
+        flex-direction: column;
+        padding: 0 4%;
+    }
+    .hoppe-card {
+        width: 250px;
+        height: 400px;
+    }
+    .main-top-header-container{
+        flex-direction: row;
+        gap: 9px;
+    }
+}
+@media (max-width: 1050px) {
+    .main-top-header-container{
+        justify-content: space-between;
+        padding: 30px 0px;
+    }
+    .main-page-header-wrapper{
+        height: auto;
+        
+        overflow: hidden;
+    }
+    .header-bottom{
+        padding: 20px 0px;
+        display: flex;
+    }
+    .kontakt-container{
+        padding: 0 !important;
+    }
+    .hamburger-menu-ui{
+        display: block;
+    }
+    .banner-section{
+        padding: 0;
+    }
+    .text-container-icon,
+    .nav-bottom{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .navbar-logo img{
+        width: 200px;
+    }
+    .search-container {
+       display: none;
+    }
+    .navbar-brand {
+        order: 1;
+    }
+    .header-top{
+        height: auto;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .toolbar-container {
+        order: 2;
+    }
+    .search-collapse{
+        display: block;
+        padding: 3px 0px;
+    }
+    .main-page-header-wrapper {
+        padding: 0 2% !important;
+    }
+    .main-page-header-wrapper {
+        padding: 0 2% !important;
+    }
+    .banner-section {
+        padding: 0;
+    }
+    .text-container-icon {
+        display: none;
+    }
+    .toolbar-container {
+        width: auto;
+    }
+    .hoppe-section-background{
+        padding: 0;
+    }
+    .hoppe-cards-container-rows{
+        justify-content: center !important;
+    }
+    .description-section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+    .header-top{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width: 1200px) {
+    .hoppe-banner-desktop{
+        display: none;
+    }
+    .hoppe-section-background-pading{
+        padding: 0;
+    }
+    .hoppe-banner-mobile img{
+        width: 100%;
+        display: block;
+    }
+}
+@media (min-width: 1200px){
+    .hoppe-banner-desktop{
+        display: block;
+    }
+    .hoppe-banner-mobile{
+        display: none;
+    }
+}
+@media (max-width: 1700px) {
+    .main-page-header-wrapper{
+        padding: 0 5%;
+    }
+
+}
