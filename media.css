@@ -139,5 +139,10 @@
     .hoppe-section-background-pading{
         padding: 0px 7% !important;
     }
-    
+    .footer-rows{
+        padding: 0px 1%;
+    }
+    .footer-über-hoppe{
+        padding: 0;
+    }
 }
